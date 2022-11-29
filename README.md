@@ -11,7 +11,7 @@ a way to add Cardano tools to my system scope in a declarative way. Right now I 
 
 ## What success looks like?
 
-* I can run `cardano-node`, `cardano-cli` from my main shell;
+* ~~I can run `cardano-node`, `cardano-cli` from my main shell;~~
 * I can use `nix run` to do unit tests on Cardano projects, without the need to manually download `plutus-apps -> nix-shell`
 * How do I manage my checkout tag?
 
