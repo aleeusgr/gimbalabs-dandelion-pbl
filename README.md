@@ -1,17 +1,7 @@
-# gimbalabs-ppbl-???
+Test Suit for Gimbalabs PBL Dandelion.
 
-As of this moment, I see any project as an opportunity to work on git, so I propose we use this repo as a demo.
-Beside that, contract we are using, Guessing Game, is used in the [official tutorials](https://plutus-apps.readthedocs.io/en/latest/plutus/tutorials/contract-testing.html)
+- [ ] `cardano-cli query tip --testnet-magic 1`
 
-It works well with a [community initiative](https://github.com/input-output-hk/Developer-Experience-working-group/discussions/41)
-
-## What do I want to get?
-
-a way to add Cardano tools to my system scope in a declarative way. Right now I can do nix-shell like everyone else, but I use nix garbage collector quite often and it seems to be the most direct way to protect rather large piece of code from it. It makes sense cos my monthly internet limit is only 140gig.
-
-## What success looks like?
-
-* ~~I can run `cardano-node`, `cardano-cli` from my main shell;~~
 
 LFG!
 
