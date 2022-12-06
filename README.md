@@ -4,7 +4,10 @@ Here I learn Dandelion and all things Development, Security and Operations that 
 ## Dandelion
 TODO
 
-## 
+## Learning Targets
+- [ ] 1
+- [ ] 
+
 
 LFG!
 
