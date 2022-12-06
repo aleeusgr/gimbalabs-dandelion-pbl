@@ -8,7 +8,4 @@ TODO
 
 LFG!
 
-##  Materials: 
-https://github.com/aleeusgr/gimbalabs-dandelion-pbl/discussions/7
-* https://gimbalabs.instructure.com/courses/26/
-* [NixOS VM on Mac Setup](https://www.youtube.com/watch?v=ubDMLoWz76U)
+##  [Docs](https://github.com/aleeusgr/gimbalabs-dandelion-pbl/discussions/7)
