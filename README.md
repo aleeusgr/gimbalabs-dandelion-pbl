@@ -1,6 +1,16 @@
 Test Suit for Gimbalabs PBL Dandelion.
 
-- [ ] `cardano-cli query tip --testnet-magic 1`
+## Api-test
+How do I know my node works fine? 
+`cardano-cli query tip --testnet-magic 1`; 
+
+shell scripting
+- [x] Use binaries, | node in a docker container | node in nix container
+- [ ] set up CI; 
+
+
+
+## 
 
 
 LFG!
