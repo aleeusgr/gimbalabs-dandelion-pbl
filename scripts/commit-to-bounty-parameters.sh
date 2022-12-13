@@ -32,13 +32,12 @@ BOUNTY_TOKENS_AT_TREASURY=9999990
 
 # $path/cardano-cli query utxo --testnet-magic 1 --address $CONTRIBUTOR
 
-# echo "Specify a Collateral UTxO:"
 COLLATERAL=
 #echo "Specify a TXIN with Contributor Token:"
-TXIN1=
+TXIN1="4f8962fc94718bd516e22d8ad72bdd25f14ad62ecbdc3ad0159be4db7151e6dc#0"
 #echo "What is the Asset ID of your Contributor Token?"
 #read CONTRIBUTOR_ASSET
-CONTRIBUTOR_ASSET=9a14207c494a43dc2d30eebda683b1dcf2c8b42c48dc6195c4b5e948.636f44534554
+CONTRIBUTOR_ASSET="9a14207c494a43dc2d30eebda683b1dcf2c8b42c48dc6195c4b5e948.636f44534554"
 #echo "Specify a TXIN with with additional lovelace (for tx fees):"
 TXIN2=
 # echo "Amount of lovelace in this bounty:"
