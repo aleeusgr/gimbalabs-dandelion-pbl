@@ -3,6 +3,7 @@
 source node-path.sh
 source commit-to-bounty-parameters.sh
 
+echo $TREASURY_DATUM
 $path/cardano-cli transaction build \
 --babbage-era \
 --tx-in $CONTRACT_TXIN \
@@ -17,7 +18,7 @@ $path/cardano-cli transaction build \
 --tx-out $TREASURY_ADDR+"$LOVELACE_BACK_TO_TREASURY + $TOKENS_BACK_TO_TREASURY $BOUNTY_ASSET" \
 --tx-out-datum-embed-file $TREASURY_DATUM \
 --change-address $CONTRIBUTOR \
---protocol-params-file protocol.json \ 
+--protocol-params-file $path/protocol.json \ 
 --testnet-magic 1 \
 --out-file commitment-tx.draft
 
