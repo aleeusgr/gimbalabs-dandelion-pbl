@@ -22,13 +22,3 @@ $path/cardano-cli transaction build \
 --testnet-magic 1 \
 --out-file commitment-tx.draft
 
-$path/cardano-cli transaction sign \
---signing-key-file $CONTRIBUTORKEY \
---testnet-magic 1 \
---tx-body-file commitment-tx.draft \
---out-file commitment-tx.signed
-
-$path/cardano-cli transaction submit \
---tx-file commitment-tx.signed \
---testnet-magic 1
-
