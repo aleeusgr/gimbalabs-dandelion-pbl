@@ -19,3 +19,5 @@ The guiding questions are:
 LFG!
 
 ##  [Docs](https://github.com/aleeusgr/gimbalabs-dandelion-pbl/discussions/7)
+
+- https://www.schoolofhaskell.com/user/pbv/an-introduction-to-quickcheck-testing
