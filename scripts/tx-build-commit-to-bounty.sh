@@ -1,7 +1,6 @@
 # Usage:
 # fill with values
 
-# 
 source node-path.sh
 CONTRIBUTORKEY=$path/keys/payment1.skey
 CONTRIBUTOR=$($path/scripts/build-address.sh)
@@ -16,10 +15,11 @@ TREASURY_ADDR=addr_test1wrq28lmgudwkwvpvj5uszepttsttk5q99tvxwrdfn8agsggrfa02a
 BOUNTY_ADDR=addr_test1wz5y9gq4zemhm8lp343vguz487ful45zdedls9k7fhg6z9qm6h9hr
 BOUNTY_ASSET="02aa7e9d83f43ad54ab2585900292db7280ec43410e7563dac934d17.44534554"
 
-TREASURY_PLUTUS_SCRIPT="$ppbl/ppbl-course-02/project-303/bounty-treasury-escrow/output/example-bounty-treasury-new-preprod.plutus"
-TREASURY_DATUM="$ppbl/ppbl-course-02/project-303/bounty-treasury-escrow/datum-and-redeemers/TreasuryDatumExample01.json"
-TREASURY_ACTION="$ppbl/ppbl-course-02/project-303/bounty-treasury-escrow/datum-and-redeemers/TreasuryActionExample01.json"
-BOUNTY_DATUM="$ppbl/ppbl-course-02/project-303/bounty-treasury-escrow/datum-and-redeemers/BountyEscrowDatumExample01.json"
+TREASURY_PLUTUS_SCRIPT="/home/alex/workshop/gimbalabs/ppbl-course-02/project-303/bounty-treasury-escrow/output/example-bounty-treasury-new-preprod.plutus"
+
+TREASURY_DATUM="/home/alex/workshop/gimbalabs/ppbl-course-02/project-303/bounty-treasury-escrow/datum-and-redeemers/TreasuryDatumExample01.json"
+TREASURY_ACTION="/home/alex/workshop/gimbalabs/ppbl-course-02/project-303/bounty-treasury-escrow/datum-and-redeemers/TreasuryActionExample01.json"
+BOUNTY_DATUM="/home/alex/workshop/gimbalabs/ppbl-course-02/project-303/bounty-treasury-escrow/datum-and-redeemers/BountyEscrowDatumExample01.json"
 
 
 # $path/cardano-cli query utxo --testnet-magic 1 --address $TREASURY_ADDR
