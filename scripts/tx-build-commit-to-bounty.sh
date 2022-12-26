@@ -24,16 +24,17 @@ BOUNTY_DATUM="$ppbl/ppbl-course-02/project-303/bounty-treasury-escrow/datum-and-
 
 # $path/cardano-cli query utxo --testnet-magic 1 --address $TREASURY_ADDR
 
-CONTRACT_TXIN=c09aed80866bd5387ff221e0ca8458ef953b573e39ca682cf83110ca73ebb355#0
+CONTRACT_TXIN=c09aed80866bd5387ff221e0ca8458ef953b573e39ca682cf83110ca73ebb355#2
 LOVELACE_AT_TREASURY=1500000
 BOUNTY_TOKENS_AT_TREASURY=9999990
 
 # $path/cardano-cli query utxo --testnet-magic 1 --address $CONTRIBUTOR
 
 CONTRIBUTOR_ASSET="9a14207c494a43dc2d30eebda683b1dcf2c8b42c48dc6195c4b5e948.636f44534554"
-COLLATERAL=db3fa2dcb77e1a935705fd85bf8a46ee796a3cec447b6343c62680eebea92f94#0
+# TXIN1 has to hold CONTRIBUTOR_ASSET
 TXIN1=4f8962fc94718bd516e22d8ad72bdd25f14ad62ecbdc3ad0159be4db7151e6dc#0
 TXIN2=db3fa2dcb77e1a935705fd85bf8a46ee796a3cec447b6343c62680eebea92f94#0
+COLLATERAL=db3fa2dcb77e1a935705fd85bf8a46ee796a3cec447b6343c62680eebea92f94#0
 BOUNTY_LOVELACE=6500000
 BOUNTY_AMOUNT=10
 
@@ -57,7 +58,7 @@ $path/cardano-cli transaction build \
 --tx-out $TREASURY_ADDR+"$LOVELACE_BACK_TO_TREASURY + $TOKENS_BACK_TO_TREASURY $BOUNTY_ASSET" \
 --tx-out-datum-embed-file $TREASURY_DATUM \
 --change-address $CONTRIBUTOR \
---protocol-params-file $path/protocol.json \ 
+--protocol-params-file /home/alex/protocol.json \ 
 --testnet-magic 1 \
 --out-file commitment-tx.draft
 
