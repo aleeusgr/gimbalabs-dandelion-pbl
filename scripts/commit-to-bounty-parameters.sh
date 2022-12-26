@@ -1,7 +1,6 @@
 # Usage:
 # fill with values
 
-# 
 source node-path.sh
 CONTRIBUTORKEY=$path/keys/payment1.skey
 CONTRIBUTOR=$($path/scripts/build-address.sh)
@@ -38,7 +37,7 @@ CONTRIBUTOR_ASSET="9a14207c494a43dc2d30eebda683b1dcf2c8b42c48dc6195c4b5e948.636f
 #echo "Specify a TXIN with with additional lovelace (for tx fees):"
 TXIN2=db3fa2dcb77e1a935705fd85bf8a46ee796a3cec447b6343c62680eebea92f94#0
 # echo "Amount of lovelace in this bounty:"
-BOUNTY_LOVELACE=6500000
+BOUNTY_LOVELACE=650000
 # echo "Number of DSET in this bounty:"
 BOUNTY_AMOUNT=10
 
