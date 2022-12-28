@@ -39,6 +39,12 @@ BOUNTY_AMOUNT=10
 LOVELACE_BACK_TO_TREASURY=$(expr $LOVELACE_AT_TREASURY - $BOUNTY_LOVELACE)
 TOKENS_BACK_TO_TREASURY=$(expr $BOUNTY_TOKENS_AT_TREASURY - $BOUNTY_AMOUNT)
 
+BOUNTY=$BOUNTY_ADDR + "$BOUNTY_LOVELACE + 1 $CONTRIBUTOR_ASSET + $BOUNTY_AMOUNT $BOUNTY_ASSET" \
+TREASURY=$TREASURY_ADDR+"$LOVELACE_BACK_TO_TREASURY + $TOKENS_BACK_TO_TREASURY $BOUNTY_ASSET" \
+
+echo "What goes into --tx-out"
+echo $TO_BOUNTY 
+
 $path/cardano-cli transaction build \
 --babbage-era \
 --tx-in $CONTRACT_TXIN \
@@ -48,9 +54,9 @@ $path/cardano-cli transaction build \
 --tx-in $TXIN1 \
 --tx-in $TXIN2 \
 --tx-in-collateral $COLLATERAL \
---tx-out $BOUNTY_ADDR+"$BOUNTY_LOVELACE + 1 $CONTRIBUTOR_ASSET + $BOUNTY_AMOUNT $BOUNTY_ASSET" \
+--tx-out $BOUNTY \
 --tx-out-datum-embed-file $BOUNTY_DATUM \
---tx-out $TREASURY_ADDR+"$LOVELACE_BACK_TO_TREASURY + $TOKENS_BACK_TO_TREASURY $BOUNTY_ASSET" \
+--tx-out $TREASURY \
 --tx-out-datum-embed-file $TREASURY_DATUM \
 --change-address $CONTRIBUTOR \
 --protocol-params-file /home/alex/protocol.json \ 
