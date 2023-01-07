@@ -38,11 +38,10 @@ qcProps = testGroup "(checked by QuickCheck)"
       \x y z n ->
         (n :: Integer) >= 3 QC.==> x^n + y^n /= (z^n :: Integer)
   -- prop_split_inv c xs 
-  --  = let ys = split c xs in 
-  --    collect (length ys) $ unsplit c ys == xs
-  , QC.testProperty "Fermat's last theorem" $
-      \x y z n ->
-        (n :: Integer) >= 3 QC.==> x^n + y^n /= (z^n :: Integer)
+  , QC.testProperty "Split-Unsplit" $
+      \c xs ->
+        let ys = split c xs in 
+        collect (length ys) $ unsplit c ys == xs
   ]
 
 unitTests = testGroup "Unit tests"
