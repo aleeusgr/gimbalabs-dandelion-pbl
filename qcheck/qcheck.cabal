@@ -123,5 +123,10 @@ test-suite qcheck-test
 
     -- Test dependencies.
     build-depends:
-        base ^>=4.15.1.0, QuickCheck,
-        qcheck
+        base ^>=4.15.1.0
+      , tasty
+      , tasty-quickcheck
+      , tasty-smallcheck
+      , tasty-hunit
+      , tasty-hspec
+      , qcheck
