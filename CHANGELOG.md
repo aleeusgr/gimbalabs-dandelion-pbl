@@ -1,19 +1,15 @@
 7 Jan
 
-I implemented a test, a property test, and a suite using Tasty trees and QuickCheck properties.
-[QuickCheck](https://en.wikipedia.org/wiki/QuickCheck) is a combinator library for generating test cases in an approach called property testing (not to confuse with algorithms)
+Now, how do I implement property checking for smart contracts?
 
-A [test suite](https://en.wikipedia.org/wiki/Test_suite) is a collection of test cases that are intended to be used to test a software program.
+[Discussion](https://github.com/input-output-hk/Developer-Experience-working-group/discussions/41)
 
-A mechanism for determining whether a test has passed or failed is called an [oracle](https://en.wikipedia.org/wiki/Test_oracle)
-Specified, Derived, Implicit, Human.
-Test oracle problem.
+>Some input on how to test plutus contracts using a ContractModel. That is, use a QuickCheck model to automatically generate test cases for your plutus contract.
 
-https://en.wikipedia.org/wiki/Software_testing#Property_testing
+>https://plutus-apps.readthedocs.io/en/latest/plutus/tutorials/contract-testing.html
+https://plutus-apps.readthedocs.io/en/latest/plutus/tutorials/contract-models.html
 
-## 📑
-
-https://en.wikipedia.org/wiki/Design_by_contract
+>Note that you do not necessary need to use the contract monad in plutus-apps, even though the tutorials do use this for their testing approach. Just ping Quviq if you want to get automatic test case generation in a different setting.
 
 3 Jan
 

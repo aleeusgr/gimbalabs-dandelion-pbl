@@ -14,3 +14,17 @@ If I want to have a complicated test, I can write it in tests folder and import 
 How do I get to properties?
 How do I get from here to property testing a plutus smart contract?
 
+I implemented a test, a property test, and a suite using Tasty trees and QuickCheck properties.
+[QuickCheck](https://en.wikipedia.org/wiki/QuickCheck) is a combinator library for generating test cases in an approach called property testing (not to confuse with algorithms)
+
+A [test suite](https://en.wikipedia.org/wiki/Test_suite) is a collection of test cases that are intended to be used to test a software program.
+
+A mechanism for determining whether a test has passed or failed is called an [oracle](https://en.wikipedia.org/wiki/Test_oracle)
+Specified, Derived, Implicit, Human.
+Test oracle problem.
+
+https://en.wikipedia.org/wiki/Software_testing#Property_testing
+
+## 📑
+
+https://en.wikipedia.org/wiki/Design_by_contract
