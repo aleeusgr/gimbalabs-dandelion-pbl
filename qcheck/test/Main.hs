@@ -7,7 +7,6 @@ import Test.Tasty.QuickCheck as QC
 import Test.Tasty.HUnit
 
 import Data.List
-import Data.Ord
 
 main = defaultMain tests
 
