@@ -1,8 +1,7 @@
 # Revision history for qcheck
 
 ## 0.1.0.0 -- 2023-01-07
-
-* cabal run, cabal test.
+QuickCheck tutorial using `cabal init` and tasty
 
 What should be in exe, what should be in lib, and what should be in test?
 
