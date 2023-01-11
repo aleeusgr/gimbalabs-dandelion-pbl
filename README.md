@@ -1,6 +1,5 @@
-Cardano Community should have guidelines and best practices for testing dApps and products.
 
-The guiding questions are:
+The guiding questions:
 
 * At what stage of your project you introduce testing automation?
 * Unit testing, Integration Testing, API, UI, smart contract business logic testing, penetration testing. What is missing?
