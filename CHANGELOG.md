@@ -1,16 +1,6 @@
 11 Jan
-```
-nix-shell$ cd /always-succeeds
 
-# this may take a while the first time
-cabal update
-cabal repl 
-
-Prelude MyFirstPlutusCompiler>
-
-Right()
-```
-I need to automate this.
+I need to be able to reprliacte and adjust plutus-apps build process.
 
 Note: I got a warning about submodules in git
 
